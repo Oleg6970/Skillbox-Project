@@ -55,7 +55,7 @@
             </li>
           </ul>
         </nav>
-        <a class="header__auth-wrapper header__auth" href="#" tabindex="0">
+        <a class="header__auth-wrapper header__auth" href="#" >
           <svg class="section-nav__enter-svg" aria-hidden="true" width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M5.12056 9.09278L6.13889 10.1111L9.75 6.5L6.13889 2.88889L5.12056 3.90722L6.98389 5.77778H0V7.22222H6.98389L5.12056 9.09278ZM11.5556 0H1.44444C0.642778 0 0 0.65 0 1.44444V4.33333H1.44444V1.44444H11.5556V11.5556H1.44444V8.66667H0V11.5556C0 12.35 0.642778 13 1.44444 13H11.5556C12.35 13 13 12.35 13 11.5556V1.44444C13 0.65 12.35 0 11.5556 0Z" />
           </svg>
@@ -148,7 +148,7 @@
           </li>
         </ul>
         <form class="header__search ">
-          <button class="btn-search reset-btn" type="submit" tabindex="0" aria-label="Найти">
+          <button class="btn-search reset-btn" type="submit"  aria-label="Найти">
             <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
               <rect width="6.8678" height="1.71695" transform="matrix(-0.718931 0.695081 0.718931 0.695081 4.9375 15.6534)" fill="white"/>
               <path fill-rule="evenodd" clip-rule="evenodd" d="M12.0967 18C7.53016 18 3.99668 14.3229 3.99668 10C3.99668 5.67715 7.53016 2 12.0967 2C16.6632 2 20.1967 5.67715 20.1967 10C20.1967 14.3229 16.6632 18 12.0967 18ZM12.0967 20C6.57383 20 2.09668 15.5228 2.09668 10C2.09668 4.47715 6.57383 0 12.0967 0C17.6195 0 22.0967 4.47715 22.0967 10C22.0967 15.5228 17.6195 20 12.0967 20Z" fill="white"/>
@@ -172,7 +172,7 @@
   <div class="main">
     <section class="hero">
       <div class="container hero__container">
-        <div class="swiper hero__swiper">
+        <div class="hero__swiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide hero-1"></div>
             <div class="swiper-slide hero-2"></div>
@@ -184,7 +184,7 @@
           <p class="hero__text">
             Мы&nbsp;вынуждены отталкиваться от&nbsp;того, что реализация намеченных плановых заданий создаёт предпосылки для новых предложений
           </p>
-          <a class="hero__btn">Подписаться на&nbsp;рассылку</a>
+          <a class="hero__btn" href="#subscribe">Подписаться на&nbsp;рассылку</a>
         </div>
       </div>
     </section>
@@ -197,7 +197,7 @@
           Ясность нашей позиции очевидна: семантический разбор внешних противодействий однозначно определяет каждого
           участника как способного принимать собственные решения касаемо распределения внутренних резервов и&nbsp;ресурсов.
           Не&nbsp;следует, однако, забывать, что высококачественный прототип будущего проекта влечёт за&nbsp;собой
-          процесс внедрения и&nbsp;модернизации модели развития. Повседневная практика показывает, что высокое качество
+          процесс внедрения и&nbsp;модернизации модели&nbsp;развития.<br>Повседневная практика показывает, что высокое качество
           позиционных исследований создаёт необходимость включения в&nbsp;производственный план целого ряда внеочередных
           мероприятий с&nbsp;учётом комплекса распределения внутренних резервов и&nbsp;ресурсов. В&nbsp;рамках
           спецификации современных стандартов, действия представителей оппозиции набирают популярность среди
@@ -207,104 +207,111 @@
     </section>
     <section class="gallery" id="gallery">
       <div class="container gallery__container">
-        <div class="gallery__filter">
-          <h3 class="title gallery__title">Галерея</h3>
+        <div class="gallary__content">
+          <div class="gallery__filter">
+            <h3 class="title gallery__title">Галерея</h3>
 
-          <label class="gallery__select-label" for="gallery__select">Фильтр:</label>
-          <select class="gallery__select" id="gallery__select">
-            <option>Живопись</option>
-            <option>Рисунок</option>
-            <option>Скульптура</option>
-          </select>
+            <label class="gallery__select-label" for="gallery__select">Фильтр:</label>
+            <select class="gallery__select" id="gallery__select">
+              <option>Живопись</option>
+              <option>Рисунок</option>
+              <option>Скульптура</option>
+            </select>
 
-          <ul class="gallery__check reset-list">
-            <li class="gallery-item">
-              <label class="gallery__checkboxes" for="checkbox-1">
-                <input class="gallery__checkboxes-input" type="checkbox" name="checkbox-1" id="checkbox-1"  aria-label="фильтр 19 век">
-                <span class="gallery__checkboxes-btn"></span>
-                <span class="gallery__checkboxes-text">XIX век</span>
-                XIX век
-              </label>
-            </li>
-            <li class="gallery-item">
-              <label class="gallery__checkboxes" for="checkbox-2">
-                <input class="gallery__checkboxes-input" type="checkbox" name="checkbox-1" id="checkbox-2"  aria-label="фильтр 19 век">
-                <span class="gallery__checkboxes-btn"></span>
-                <span class="gallery__checkboxes-text">XX век</span>
-                XIX век
-              </label>
-            </li>
-            <li class="gallery-item">
-              <label class="gallery__checkboxes" for="checkbox-3">
-                <input class="gallery__checkboxes-input" type="checkbox" name="checkbox-1" id="checkbox-3"  aria-label="фильтр 19 век">
-                <span class="gallery__checkboxes-btn"></span>
-                <span class="gallery__checkboxes-text">Современность</span>
-                XIX век
-              </label>
-            </li>
-          </ul>
-        </div>
-        <div class="gallery__works">
-          <div class="gallery__works__navigation">
-            <button class="gallery__works__btn-prev"></button>
-            <div class="gallery__works__pagination"></div>
-            <button class="gallery__works__btn-next"></button>
+            <ul class="gallery__check reset-list">
+              <li class="gallery-item">
+                <label class="gallery__checkboxes" for="checkbox-1">
+                  <input class="gallery__checkboxes-input" type="checkbox" name="checkbox-1" id="checkbox-1"  aria-label="фильтр 19 век">
+                  <span class="gallery__checkboxes-btn"></span>
+                  <span class="gallery__checkboxes-text">XIX век</span>
+                </label>
+              </li>
+              <li class="gallery-item">
+                <label class="gallery__checkboxes" for="checkbox-2">
+                  <input class="gallery__checkboxes-input" type="checkbox" name="checkbox-1" id="checkbox-2"  aria-label="фильтр 19 век">
+                  <span class="gallery__checkboxes-btn"></span>
+                  <span class="gallery__checkboxes-text">XX век</span>
+                </label>
+              </li>
+              <li class="gallery-item">
+                <label class="gallery__checkboxes" for="checkbox-3">
+                  <input class="gallery__checkboxes-input" type="checkbox" name="checkbox-1" id="checkbox-3"  aria-label="фильтр 19 век">
+                  <span class="gallery__checkboxes-btn"></span>
+                  <span class="gallery__checkboxes-text">Современность</span>
+                </label>
+              </li>
+            </ul>
           </div>
-          <div class="gallery__works__swiper">
-            <div class="gallery__swiper-wrapper">
-              <a href="#modal-view-1" rel="modal:open" class="gallery__swiper-slide gallery__works-slide">
-                <picture>
-                  <source media="(max-width: 600px)" srcset="img/gallery-1-320.jpg">
-                  <source media="(max-width: 970px)" srcset="img/gallery-1-768.jpg">
-                  <source media="(max-width: 1110px)" srcset="img/gallery-1-1024.jpg">
-                  <img class="section-gallery__img" src="img/gallery-1-1920.jpg" alt="Изображение картины">
-                </picture>
-              </a>
-              <a href="#modal-view-2" rel="modal:open" class="gallery__swiper-slide gallery__works-slide">
-                <picture>
-                  <source media="(max-width: 600px)" srcset="img/gallery-2-320.jpg">
-                  <source media="(max-width: 970px)" srcset="img/gallery-2-768.jpg">
-                  <source media="(max-width: 1110px)" srcset="img/gallery-2-1024.jpg">
-                  <img class="section-gallery__img" src="img/gallery-2-1920.jpg" alt="Изображение картины">
-                </picture>
-              </a>
-              <a href="#modal-view-3" rel="modal:open" class="gallery__swiper-slide gallery__works-slide">
-                <picture>
-                  <source media="(max-width: 600px)" srcset="img/gallery-3-320.jpg">
-                  <source media="(max-width: 970px)" srcset="img/gallery-3-768.jpg">
-                  <source media="(max-width: 1110px)" srcset="img/gallery-3-1024.jpg">
-                  <img class="section-gallery__img" src="img/gallery-3-1920.jpg" alt="Изображение картины">
-                </picture>
-              </a>
-              <a href="#modal-view-4" rel="modal:open" class="gallery__swiper-slide gallery__works-slide">
-                <picture>
-                  <source media="(max-width: 600px)" srcset="img/gallery-4-320.jpg">
-                  <source media="(max-width: 970px)" srcset="img/gallery-4-768.jpg">
-                  <source media="(max-width: 1110px)" srcset="img/gallery-4-1024.jpg">
-                  <img class="section-gallery__img" src="img/gallery-4-1920.jpg" alt="Изображение картины">
-                </picture>
-              </a>
-              <a href="#modal-view-5" rel="modal:open" class="gallery__swiper-slide gallery__works-slide">
-                <picture>
-                  <source media="(max-width: 600px)" srcset="img/gallery-5-320.jpg">
-                  <source media="(max-width: 970px)" srcset="img/gallery-5-768.jpg">
-                  <source media="(max-width: 1110px)" srcset="img/gallery-5-1024.jpg">
-                  <img class="section-gallery__img" src="img/gallery-5-1920.jpg" alt="Изображение картины">
-                </picture>
-              </a>
-              <a href="#modal-view-6" rel="modal:open" class="gallery__swiper-slide gallery__works-slide">
-                <picture>
-                  <source media="(max-width: 600px)" srcset="img/gallery-6-320.jpg">
-                  <source media="(max-width: 970px)" srcset="img/gallery-6-768.jpg">
-                  <source media="(max-width: 1110px)" srcset="img/gallery-6-1024.jpg">
-                  <img class="section-gallery__img" src="img/gallery-6-1920.jpg" alt="Изображение картины">
-                </picture>
-              </a>
+          <div class="gallery__works">
+            <div class="gallery__works-navigation">
+              <button class="gallery__works-btn-prev"></button>
+              <div class="gallery__works-pagination"></div>
+              <button class="gallery__works-btn-next"></button>
+            </div>
+            <div class="gallery__works-swiper">
+              <div class="swiper-wrapper">
+                <a href="#modal-view-1" rel="modal:open" class="swiper-slide gallery__works-slide">
+                  <picture>
+                    <source media="(max-width: 600px)" srcset="img/gallery-1-320.jpg">
+                    <source media="(max-width: 970px)" srcset="img/gallery-1-768.jpg">
+                    <source media="(max-width: 1110px)" srcset="img/gallery-1-1024.jpg">
+                    <img class="gallery__swiper-img" src="img/gallery-1-1920.jpg" alt="Изображение картины">
+                  </picture>
+                </a>
+                <a href="#modal-view-2" rel="modal:open" class="swiper-slide gallery__works-slide">
+                  <picture>
+                    <source media="(max-width: 600px)" srcset="img/gallery-2-320.jpg">
+                    <source media="(max-width: 970px)" srcset="img/gallery-2-768.jpg">
+                    <source media="(max-width: 1110px)" srcset="img/gallery-2-1024.jpg">
+                    <img class="gallery__swiper-img" src="img/gallery-2-1920.jpg" alt="Изображение картины">
+                  </picture>
+                </a>
+                <a href="#modal-view-3" rel="modal:open" class="swiper-slide gallery__works-slide">
+                  <picture>
+                    <source media="(max-width: 600px)" srcset="img/gallery-3-320.jpg">
+                    <source media="(max-width: 970px)" srcset="img/gallery-3-768.jpg">
+                    <source media="(max-width: 1110px)" srcset="img/gallery-3-1024.jpg">
+                    <img class="gallery__swiper-img" src="img/gallery-3-1920.jpg" alt="Изображение картины">
+                  </picture>
+                </a>
+                <a href="#modal-view-4" rel="modal:open" class="swiper-slide gallery__works-slide">
+                  <picture>
+                    <source media="(max-width: 600px)" srcset="img/gallery-4-320.jpg">
+                    <source media="(max-width: 970px)" srcset="img/gallery-4-768.jpg">
+                    <source media="(max-width: 1110px)" srcset="img/gallery-4-1024.jpg">
+                    <img class="gallery__swiper-img" src="img/gallery-4-1920.jpg" alt="Изображение картины">
+                  </picture>
+                </a>
+                <a href="#modal-view-5" rel="modal:open" class="swiper-slide gallery__works-slide">
+                  <picture>
+                    <source media="(max-width: 600px)" srcset="img/gallery-5-320.jpg">
+                    <source media="(max-width: 970px)" srcset="img/gallery-5-768.jpg">
+                    <source media="(max-width: 1110px)" srcset="img/gallery-5-1024.jpg">
+                    <img class="gallery__swiper-img" src="img/gallery-5-1920.jpg" alt="Изображение картины">
+                  </picture>
+                </a>
+                <a href="#modal-view-6" rel="modal:open" class="swiper-slide gallery__works-slide">
+                  <picture>
+                    <source media="(max-width: 600px)" srcset="img/gallery-6-320.jpg">
+                    <source media="(max-width: 970px)" srcset="img/gallery-6-768.jpg">
+                    <source media="(max-width: 1110px)" srcset="img/gallery-6-1024.jpg">
+                    <img class="gallery__swiper-img" src="img/gallery-6-1920.jpg" alt="Изображение картины">
+                  </picture>
+                </a>
+              </div>
             </div>
           </div>
         </div>
+
       </div>
     </section>
+
+
+
+
+
+
+
 
     <section class="section-catalog" id="catalog">
       <div class="container">

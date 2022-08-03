@@ -56,23 +56,102 @@ function setMenuListener() {
 setMenuListener();
 
 
-const swiper = new Swiper('.swiper', {
+const hero__swiper = new Swiper('.hero__swiper', {
   direction: 'horizontal',
+  spaceBetween: 0,
+  centeredSlides: true,
+  pagination: false,
   loop: true,
-  // autoplay: {
-  //   delay: 5000,
-  // },
+  autoplay: {
+    delay: 7000,
+  },
   speed: 300,
-  // pagination: {
-  //   el: '.swiper-pagination',
-  //   type: "bullets",
-  //   clickable: true,
-  // },
 });
 
-const element = document.querySelector('.select');
+const element = document.querySelector('.gallery__select');
 const choices = new Choices(element,{
-  searchEnabled: true,
-  placeholder: true,
+  searchEnabled: false,
+  placeholder: false,
   placeholderValue: null,
 });
+
+
+
+var gallery__swiper = new Swiper(".gallery__works-swiper", {
+  slidesPerView: 1,
+  grid: {
+    rows: 1,
+    fill: "row"
+  },
+  spaceBetween: 20,
+
+  pagination: {
+    el: ".gallery__works-pagination",
+    type: "fraction"
+  },
+  navigation: {
+    nextEl: ".gallery__works-btn-next",
+    prevEl: ".gallery__works-btn-prev"
+  },
+
+  breakpoints: {
+    700: {
+      slidesPerView: 2,
+      spaceBetween: 38,
+      slidesPerGroup: 2,
+    },
+
+    1010: {
+      slidesPerView: 2,
+      spaceBetween: 33,
+      slidesPerGroup: 2,
+    },
+
+    1600: {
+      slidesPerView: 3,
+      spaceBetween: 50,
+      slidesPerGroup: 3,
+    }
+  },
+
+  a11y: {
+    prevSlideMessage: 'предыдущий слайд',
+    nextSlideMessage: 'следующий слайд',
+  },
+
+  keyboard: {
+    enabled: true,
+    onlyInViewport: true
+  },
+
+  watchSlidesProgress: true,
+    watchSlidesVisibility: true,
+    slideVisibleClass: "slide-visible",
+
+    on: {
+      init: function () {
+        this.slides.forEach((slide) => {
+          if (!slide.classList.contains("slide-visible")) {
+            slide.tabIndex = "-1";
+          } else {
+            slide.tabIndex = "";
+          }
+        });
+      },
+      slideChange: function () {
+        this.slides.forEach((slide) => {
+          if (!slide.classList.contains("slide-visible")) {
+            slide.tabIndex = "-1";
+          } else {
+            slide.tabIndex = "";
+          }
+        });
+      },
+      beforeResize: function () {
+        this.slides.forEach((el) => {
+          el.style.marginTop = "";
+      });
+      }
+    }
+
+  });
