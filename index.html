@@ -11,6 +11,8 @@
   <link rel="stylesheet" href="css/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/simplebar.css" />
   <link rel="stylesheet" href="css/choices.min.css" />
+
+  <link rel="stylesheet" href="css/jquery.modal.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -172,7 +174,7 @@
   <div class="main">
     <section class="hero">
       <div class="container hero__container">
-        <div class="hero__swiper">
+        <div class="swiper hero__swiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide hero-1"></div>
             <div class="swiper-slide hero-2"></div>
@@ -188,6 +190,8 @@
         </div>
       </div>
     </section>
+
+
     <section class="about" id="about">
       <div class="container about__container">
         <h3  class="title about__title">
@@ -205,6 +209,8 @@
         </p>
       </div>
     </section>
+
+
     <section class="gallery" id="gallery">
       <div class="container gallery__container">
         <div class="gallary__content">
@@ -248,7 +254,7 @@
               <div class="gallery__works-pagination"></div>
               <button class="gallery__works-btn-next"></button>
             </div>
-            <div class="gallery__works-swiper">
+            <div class="swiper gallery__works-swiper">
               <div class="swiper-wrapper">
                 <a href="#modal-view-1" rel="modal:open" class="swiper-slide gallery__works-slide">
                   <picture>
@@ -810,13 +816,14 @@
       </div>
     </div>
   </footer>
-  <div id="modal-2" class="modal modal--custom">
+
+  <div id="modal-view-2" class="modal modal--custom">
     <div class="modal__card">
       <picture>
-        <source media="(max-width: 669px)" srcset="img/jpg/gallery-2-modal-mobile.jpg">
-        <source media="(max-width: 1010px)" srcset="img/jpg/gallery-2-modal-768.jpg">
-        <source media="(max-width: 1200px)" srcset="img/jpg/gallery-2-modal.jpg">
-        <img class="modal__card-img" src="img/jpg/gallery-2-modal.jpg" alt="Картина">
+        <source media="(max-width: 669px)" srcset="img/gallery-2-modal-mobile.jpg">
+        <source media="(max-width: 1010px)" srcset="img/gallery-2-modal-768.jpg">
+        <source media="(max-width: 1200px)" srcset="img/gallery-2-modal.jpg">
+        <img class="modal__card-img" src="img/gallery-2-1920-modal.jpg" alt="Картина">
       </picture>
       <div class="modal__content">
         <h2 class="modal__title">Казимир Малевич</h2>
@@ -832,8 +839,12 @@
   <script src="js/simplebar.min.js"></script>
   <script src="js/swiper-bundle.min.js"></script>
   <script src="js/choices.min.js"></script>
+  <script defer src="js/jquery.min.js"></script>
+  <script defer src="js/jquery-1.12.4.js"></script>
+  <script defer src="js/jquery-ui.js"></script>
+  <script defer src="js/jquery.modal.min.js"></script>
   <script defer src="https://api-maps.yandex.ru/2.1/?apikey=вашAPI-ключ&lang=ru_RU"></script>
-  <script defer src="js/mymap.js"></script>
+  <!-- <script defer src="js/mymap.js"></script> -->
   <script src="js/index.js"></script>
 </body>
 </html>
