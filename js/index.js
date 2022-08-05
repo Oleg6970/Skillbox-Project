@@ -173,48 +173,46 @@ $('.gallery__works-slide').click(function(event) {
 });
 
 
+// $( "#accordion" ).accordion({
+//     icons: false,
+//     heightStyle: "content",
+//     collapsible: true
+// });
 
+(() => {
+  new Accordion(".js-accordion-container", {
+    openOnInit: [0]
+  });
+})();
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-$( function() {
-  $( ".section-catalog__years" ).accordion({
-     icons: false,
-     heightStyle: "content",
-     collapsible: true
-   });
-
-});
-
+// document.addEventListener('DOMContentLoaded', function() {
+//   document.querySelectorAll('.catalog__item-link').forEach(function (tabsBtn) {
+//     tabsBtn.addEventListener('click', function (e) {
+//       const path = e.currentTarget.dataset.path;
+//       document.querySelectorAll('.catalog__item-link').forEach(function (btn) {
+//         btn.classList.remove('catalog__item-link--active')
+//       });
+//       e.currentTarget.classList.add('catalog__item-link--active');
+//       document.querySelectorAll('.catalog__item-views').forEach(function (tabsBtn) {
+//         tabsBtn.classList.remove('catalog__item-views--active')
+//       });
+//       document.querySelector(`[data-target="${path}"]`).classList.add('catalog__item-views--active');
+//     });
+//   });
+// })
 
 document.addEventListener('DOMContentLoaded', function() {
-  document.querySelectorAll('.section-catalog__painter-link').forEach(function (tabsBtn) {
+  document.querySelectorAll('.accordion__painter-link').forEach(function (tabsBtn) {
     tabsBtn.addEventListener('click', function (e) {
       const path = e.currentTarget.dataset.path;
-      document.querySelectorAll('.section-catalog__painter-link').forEach(function (btn) {
-        btn.classList.remove('section-catalog__painter-link--active')
+      document.querySelectorAll('.accordion__painter-link').forEach(function (btn) {
+        btn.classList.remove('tab-active')
       });
-      e.currentTarget.classList.add('section-catalog__painter-link--active');
-      document.querySelectorAll('.section-catalog__img-text').forEach(function (tabsBtn) {
-        tabsBtn.classList.remove('section-catalog__img-text--active')
+      e.currentTarget.classList.add('tab-active');
+      document.querySelectorAll('.accordion__painter-link').forEach(function (tabsBtn) {
+        tabsBtn.classList.remove('tab-active')
       });
-      document.querySelector(`[data-target="${path}"]`).classList.add('section-catalog__img-text--active');
+      document.querySelector(`[data-path="${path}"]`).classList.add('tab-active');
     });
   });
 })
