@@ -202,17 +202,58 @@ $('.gallery__works-slide').click(function(event) {
 // })
 
 document.addEventListener('DOMContentLoaded', function() {
-  document.querySelectorAll('.accordion__painter-link').forEach(function (tabsBtn) {
+  document.querySelectorAll('.catalog__accordion-painter-link').forEach(function (tabsBtn) {
     tabsBtn.addEventListener('click', function (e) {
       const path = e.currentTarget.dataset.path;
-      document.querySelectorAll('.accordion__painter-link').forEach(function (btn) {
+      document.querySelectorAll('.catalog__accordion-painter-link').forEach(function (btn) {
         btn.classList.remove('tab-active')
       });
       e.currentTarget.classList.add('tab-active');
-      document.querySelectorAll('.accordion__painter-link').forEach(function (tabsBtn) {
+      document.querySelectorAll('.catalog__accordion-painter-link').forEach(function (tabsBtn) {
         tabsBtn.classList.remove('tab-active')
       });
       document.querySelector(`[data-path="${path}"]`).classList.add('tab-active');
     });
   });
 })
+
+//свайпер карточек в секции событии
+const eventswiper = new Swiper('.events__swiper', {
+  slidesPerView: 1,
+  spaceBetween: 25,
+  slidesPerGroup: 1,
+  navigation: {
+    nextEl: '.events__button-next',
+    prevEl: '.events__button-prev',
+  },
+
+  pagination: {
+    el: '.events__swiper-pagination',
+    clickable: true,
+  },
+
+  a11y: {
+    prevSlideMessage: 'предыдущий слайд',
+    nextSlideMessage: 'следующий слайд',
+  },
+
+  breakpoints: {
+    650: {
+      slidesPerView: 2,
+      spaceBetween: 34,
+      slidesPerGroup: 2,
+    },
+
+    962: {
+      slidesPerView: 3,
+      spaceBetween: 27,
+      slidesPerGroup: 3,
+    },
+
+    1400: {
+      slidesPerView: 3,
+      spaceBetween: 50,
+      slidesPerGroup: 3,
+    }
+  },
+});
