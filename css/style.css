@@ -1646,7 +1646,7 @@ padding-left: 10px;
   font-size: 24px;
   line-height: 32px;
   color: var(--color-mine-shaft);
-  margin-bottom: 5px;
+  margin: 0 0 5px 0;
 }
 
 .catalog__plug-content {
@@ -1979,11 +1979,7 @@ padding-left: 10px;
   transform: scaleX(0);
 }
 
-@media (max-width: 1024px) {
-  .accordion__question {
-    width: calc(100% / 2 - 30px);
-  }
-}
+
 
 
 
@@ -1997,7 +1993,9 @@ padding-left: 10px;
 .events__wrapper {
   /*position: relative;*/
 }
-
+.events__swiper-wrapper {
+  position: relative;
+}
 .events__cards {
   padding: 16px 0 0 0;
 }

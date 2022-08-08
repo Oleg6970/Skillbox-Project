@@ -217,6 +217,7 @@ const eventSwiper = new Swiper('.events__swiper', {
 
   pagination: {
     el: '.events__swiper-pagination',
+    // type: 'bullets',
     clickable: true,
   },
 
@@ -226,13 +227,13 @@ const eventSwiper = new Swiper('.events__swiper', {
   },
 
   breakpoints: {
-    650: {
+    768: {
       slidesPerView: 2,
       spaceBetween: 34,
       slidesPerGroup: 2,
     },
 
-    962: {
+    1024: {
       slidesPerView: 3,
       spaceBetween: 27,
       slidesPerGroup: 3,

@@ -378,7 +378,12 @@
             </div>
 
             <div class="catalog__accordion-painter-link" data-path="empty">
-              <img class="catalog__item-img" src="img/plug1.jpg" alt="Изображение пока отсутствует">
+              <picture>
+                <source media="(max-width: 320px)" srcset="img/plug1-320.jpg">
+                <source media="(max-width: 768px)" srcset="img/plug1-768.jpg">
+                <source media="(max-width: 1024px)" srcset="img/plug1-1024.jpg">
+                <img class="catalog__item-img" src="img/plug1.jpg" alt="Изображение пока отсутствует">
+              </picture>
               <h3 class="catalog__item-title">Что мы о нём знаем?</h3>
               <p class="catalog__item-text-life-plug">Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!</p>
               <a href="#gallery" class="catalog__gallery--back js-scroll-link">В галерею</a>
@@ -406,7 +411,47 @@
                     <ul class="accordion__inner-list reset-list">
                       <li class="catalog__accordion__item">
                         <a class="catalog__accordion-painter-link link link--text link--text-another js-tab-btn" data-path="empty" href="#catalog-tabs">
-                          <span class="link__text">Бенедетто ди Биндо</span>
+                          <span class="link__text">Бенедетто ди&nbsp;Биндо</span>
+                        </a>
+                      </li>
+                      <li class="catalog__accordion__item">
+                        <a class="catalog__accordion-painter-link link link--text link--text-another js-tab-btn" data-path="empty" href="#catalog-tabs">
+                          <span class="link__text">Бергоньоне, Амброджо</span>
+                        </a>
+                      </li>
+                      <li class="catalog__accordion__item">
+                        <a class="catalog__accordion-painter-link link link--text link--text-another js-tab-btn" data-path="empty" href="#catalog-tabs">
+                          <span class="link__text">Биссоло, Франческо</span>
+                        </a>
+                      </li>
+                      <li class="catalog__accordion__item">
+                        <a class="catalog__accordion-painter-link link link--text link--text-another js-tab-btn tab-active" data-path="empty" href="#catalog-tabs">
+                          <span class="link__text">Больтраффио, Джованни</span>
+                        </a>
+                      </li>
+                      <li class="catalog__accordion__item">
+                        <a class="catalog__accordion-painter-link link link--text link--text-another js-tab-btn" data-path="empty" href="#catalog-tabs">
+                          <span class="link__text">Бонсиньори, Франческо</span>
+                        </a>
+                      </li>
+                      <li class="catalog__accordion__item">
+                        <a class="catalog__accordion-painter-link link link--text link--text-another js-tab-btn" data-path="empty" href="#catalog-tabs">
+                          <span class="link__text">Боттичини, Рафаэлло</span>
+                        </a>
+                      </li>
+                      <li class="catalog__accordion__item">
+                        <a class="catalog__accordion-painter-link link link--text link--text-another js-tab-btn" data-path="empty" href="#catalog-tabs">
+                          <span class="link__text">Брамантино</span>
+                        </a>
+                      </li>
+                      <li class="catalog__accordion__item">
+                        <a class="catalog__accordion-painter-link link link--text link--text-another js-tab-btn" data-path="empty" href="#catalog-tabs">
+                          <span class="link__text">Бреа, Людовико</span>
+                        </a>
+                      </li>
+                      <li class="catalog__accordion__item">
+                        <a class="catalog__accordion-painter-link link link--text link--text-another js-tab-btn" data-path="empty" href="#catalog-tabs">
+                          <span class="link__text">Бьяджо д’Антонио Туччи</span>
                         </a>
                       </li>
                       <li class="catalog__accordion__item">
@@ -416,27 +461,7 @@
                       </li>
                       <li class="catalog__accordion__item">
                         <a class="catalog__accordion-painter-link link link--text link--text-another js-tab-btn" data-path="empty" href="#catalog-tabs">
-                          <span class="link__text">Парентино, Бернардо</span>
-                        </a>
-                      </li>
-                      <li class="catalog__accordion__item">
-                        <a class="catalog__accordion-painter-link link link--text link--text-another js-tab-btn tab-active" data-path="domenico" href="#catalog-tabs">
-                          <span class="link__text">Доменико Гирландайо</span>
-                        </a>
-                      </li>
-                      <li class="catalog__accordion__item">
-                        <a class="catalog__accordion-painter-link link link--text link--text-another js-tab-btn" data-path="empty" href="#catalog-tabs">
-                          <span class="link__text">Бенедетто ди Биндо</span>
-                        </a>
-                      </li>
-                      <li class="catalog__accordion__item">
-                        <a class="catalog__accordion-painter-link link link--text link--text-another js-tab-btn" data-path="empty" href="#catalog-tabs">
-                          <span class="link__text">Веккьетта</span>
-                        </a>
-                      </li>
-                      <li class="catalog__accordion__item">
-                        <a class="catalog__accordion-painter-link link link--text link--text-another js-tab-btn" data-path="empty" href="#catalog-tabs">
-                          <span class="link__text">Парентино, Бернардо</span>
+                          <span class="link__text">Андреа Верроккьо</span>
                         </a>
                       </li>
                       <li class="catalog__accordion__item">
@@ -446,52 +471,32 @@
                       </li>
                       <li class="catalog__accordion__item">
                         <a class="catalog__accordion-painter-link link link--text link--text-another js-tab-btn" data-path="empty" href="#catalog-tabs">
-                          <span class="link__text">Бенедетто ди Биндо</span>
+                          <span class="link__text">Беноццо Гоццоли</span>
                         </a>
                       </li>
                       <li class="catalog__accordion__item">
                         <a class="catalog__accordion-painter-link link link--text link--text-another js-tab-btn" data-path="empty" href="#catalog-tabs">
-                          <span class="link__text">Веккьетта</span>
+                          <span class="link__text">Граначчи, Франческо</span>
                         </a>
                       </li>
                       <li class="catalog__accordion__item">
                         <a class="catalog__accordion-painter-link link link--text link--text-another js-tab-btn" data-path="empty" href="#catalog-tabs">
-                          <span class="link__text">Парентино, Бернардо</span>
-                        </a>
-                      </li>
-                      <li class="catalog__accordion__item">
-                        <a class="catalog__accordion-painter-link link link--text link--text-another js-tab-btn" data-path="domenico" href="#catalog-tabs">
-                          <span class="link__text">Доменико Гирландайо</span>
+                          <span class="link__text">Грегорио ди Чекко</span>
                         </a>
                       </li>
                       <li class="catalog__accordion__item">
                         <a class="catalog__accordion-painter-link link link--text link--text-another js-tab-btn" data-path="empty" href="#catalog-tabs">
-                          <span class="link__text">Бенедетто ди Биндо</span>
+                          <span class="link__text">Джованни да Удине</span>
                         </a>
                       </li>
                       <li class="catalog__accordion__item">
                         <a class="catalog__accordion-painter-link link link--text link--text-another js-tab-btn" data-path="empty" href="#catalog-tabs">
-                          <span class="link__text">Веккьетта</span>
+                          <span class="link__text">Джованни ди Паоло</span>
                         </a>
                       </li>
                       <li class="catalog__accordion__item">
                         <a class="catalog__accordion-painter-link link link--text link--text-another js-tab-btn" data-path="empty" href="#catalog-tabs">
-                          <span class="link__text">Парентино, Бернардо</span>
-                        </a>
-                      </li>
-                      <li class="catalog__accordion__item">
-                        <a class="catalog__accordion-painter-link link link--text link--text-another js-tab-btn" data-path="domenico" href="#catalog-tabs">
-                          <span class="link__text">Доменико Гирландайо</span>
-                        </a>
-                      </li>
-                      <li class="catalog__accordion__item">
-                        <a class="catalog__accordion-painter-link link link--text link--text-another js-tab-btn" data-path="empty" href="#catalog-tabs">
-                          <span class="link__text">Бенедетто ди Биндо</span>
-                        </a>
-                      </li>
-                      <li class="catalog__accordion__item">
-                        <a class="catalog__accordion-painter-link link link--text link--text-another js-tab-btn" data-path="empty" href="#catalog-tabs">
-                          <span class="link__text">Веккьетта</span>
+                          <span class="link__text">Джорджоне</span>
                         </a>
                       </li>
                       <li class="catalog__accordion__item">
@@ -500,28 +505,28 @@
                         </a>
                       </li>
                       <li class="catalog__accordion__item">
+                        <a class="catalog__accordion-painter-link link link--text link--text-another js-tab-btn" data-path="empty" href="#catalog-tabs">
+                          <span class="link__text">Пезеллино</span>
+                        </a>
+                      </li>
+                      <li class="catalog__accordion__item">
+                        <a class="catalog__accordion-painter-link link link--text link--text-another js-tab-btn" data-path="empty" href="#catalog-tabs">
+                          <span class="link__text">Пьетро Перуджино</span>
+                        </a>
+                      </li>
+                      <li class="catalog__accordion__item">
+                        <a class="catalog__accordion-painter-link link link--text link--text-another js-tab-btn" data-path="empty" href="#catalog-tabs">
+                          <span class="link__text">Перуцци, Бальдассаре</span>
+                        </a>
+                      </li>
+                      <li class="catalog__accordion__item">
+                        <a class="catalog__accordion-painter-link link link--text link--text-another js-tab-btn" data-path="empty" href="#catalog-tabs">
+                          <span class="link__text">Пизанелло</span>
+                        </a>
+                      </li>
+                      <li class="catalog__accordion__item">
                         <a class="catalog__accordion-painter-link link link--text link--text-another js-tab-btn" data-path="domenico" href="#catalog-tabs">
-                          <span class="link__text">Доменико Гирландайо</span>
-                        </a>
-                      </li>
-                      <li class="catalog__accordion__item">
-                        <a class="catalog__accordion-painter-link link link--text link--text-another js-tab-btn" data-path="empty" href="#catalog-tabs">
-                          <span class="link__text">Бенедетто ди Биндо</span>
-                        </a>
-                      </li>
-                      <li class="catalog__accordion__item">
-                        <a class="catalog__accordion-painter-link link link--text link--text-another js-tab-btn" data-path="empty" href="#catalog-tabs">
-                          <span class="link__text">Веккьетта</span>
-                        </a>
-                      </li>
-                      <li class="catalog__accordion__item">
-                        <a class="catalog__accordion-painter-link link link--text link--text-another js-tab-btn" data-path="empty" href="#catalog-tabs">
-                          <span class="link__text">Парентино, Бернардо</span>
-                        </a>
-                      </li>
-                      <li class="catalog__accordion__item">
-                        <a class="catalog__accordion-painter-link link link--text link--text-another js-tab-btn" data-path="domenico" href="#catalog-tabs">
-                          <span class="link__text">Доменико Гирландайо</span>
+                          <span class="link__text">Пинтуриккьо</span>
                         </a>
                       </li>
                     </ul>
@@ -544,7 +549,12 @@
 
                 <div class="accordion__content ac-panel">
                   <div class="accordion__content-wrap catalog__accordion-plug">
-                    <img class="catalog__img-plug" src="img/plug2.jpg" alt="заглушка">
+                    <picture>
+                      <source media="(max-width: 320px)" srcset="img/plug2-320.jpg">
+                      <source media="(max-width: 768px)" srcset="img/plug2-768.jpg">
+                      <source media="(max-width: 1024px)" srcset="img/plug2-1024.jpg">
+                      <img class="catalog__img-plug" src="img/plug2.jpg" alt="заглушка">
+                    </picture>
                     <div class="catalog__plug-content">
                       <h3 class="catalog__title-plug">Здесь пока пусто</h3>
                       <p class="catalog__plug-text">А в галерее вы всегда можете найти что-то интересное для себя</p>
@@ -569,7 +579,12 @@
 
                 <div class="accordion__content ac-panel">
                   <div class="accordion__content-wrap catalog__accordion-plug">
-                    <img class="catalog__img-plug" src="img/plug2.jpg" alt="заглушка">
+                    <picture>
+                      <source media="(max-width: 320px)" srcset="img/plug2-320.jpg">
+                      <source media="(max-width: 768px)" srcset="img/plug2-768.jpg">
+                      <source media="(max-width: 1024px)" srcset="img/plug2-1024.jpg">
+                      <img class="catalog__img-plug" src="img/plug2.jpg" alt="заглушка">
+                    </picture>
                     <div class="catalog__plug-content">
                       <h3 class="catalog__title-plug">Здесь пока пусто</h3>
                       <p class="catalog__plug-text">А в галерее вы всегда можете найти что-то интересное для себя</p>
@@ -594,7 +609,12 @@
 
                 <div class="accordion__content ac-panel">
                   <div class="accordion__content-wrap catalog__accordion-plug">
-                    <img class="catalog__img-plug" src="img/plug2.jpg" alt="заглушка">
+                    <picture>
+                      <source media="(max-width: 320px)" srcset="img/plug2-320.jpg">
+                      <source media="(max-width: 768px)" srcset="img/plug2-768.jpg">
+                      <source media="(max-width: 1024px)" srcset="img/plug2-1024.jpg">
+                      <img class="catalog__img-plug" src="img/plug2.jpg" alt="заглушка">
+                    </picture>
                     <div class="catalog__plug-content">
                       <h3 class="catalog__title-plug">Здесь пока пусто</h3>
                       <p class="catalog__plug-text">А в галерее вы всегда можете найти что-то интересное для себя</p>
@@ -619,7 +639,12 @@
 
                 <div class="accordion__content ac-panel">
                   <div class="accordion__content-wrap catalog__accordion-plug">
-                    <img class="catalog__img-plug" src="img/plug2.jpg" alt="заглушка">
+                    <picture>
+                      <source media="(max-width: 320px)" srcset="img/plug2-320.jpg">
+                      <source media="(max-width: 768px)" srcset="img/plug2-768.jpg">
+                      <source media="(max-width: 1024px)" srcset="img/plug2-1024.jpg">
+                      <img class="catalog__img-plug" src="img/plug2.jpg" alt="заглушка">
+                    </picture>
                     <div class="catalog__plug-content">
                       <h3 class="catalog__title-plug">Здесь пока пусто</h3>
                       <p class="catalog__plug-text">А в галерее вы всегда можете найти что-то интересное для себя</p>
@@ -644,7 +669,12 @@
 
                 <div class="accordion__content ac-panel">
                   <div class="accordion__content-wrap catalog__accordion-plug">
-                    <img class="catalog__img-plug" src="img/plug2.jpg" alt="заглушка">
+                    <picture>
+                      <source media="(max-width: 320px)" srcset="img/plug2-320.jpg">
+                      <source media="(max-width: 768px)" srcset="img/plug2-768.jpg">
+                      <source media="(max-width: 1024px)" srcset="img/plug2-1024.jpg">
+                      <img class="catalog__img-plug" src="img/plug2.jpg" alt="заглушка">
+                    </picture>
                     <div class="catalog__plug-content">
                       <h3 class="catalog__title-plug">Здесь пока пусто</h3>
                       <p class="catalog__plug-text">А в галерее вы всегда можете найти что-то интересное для себя</p>
@@ -669,7 +699,12 @@
 
                 <div class="accordion__content ac-panel">
                   <div class="accordion__content-wrap catalog__accordion-plug">
-                    <img class="catalog__img-plug" src="img/plug2.jpg" alt="заглушка">
+                    <picture>
+                      <source media="(max-width: 320px)" srcset="img/plug2-320.jpg">
+                      <source media="(max-width: 768px)" srcset="img/plug2-768.jpg">
+                      <source media="(max-width: 1024px)" srcset="img/plug2-1024.jpg">
+                      <img class="catalog__img-plug" src="img/plug2.jpg" alt="заглушка">
+                    </picture>
                     <div class="catalog__plug-content">
                       <h3 class="catalog__title-plug">Здесь пока пусто</h3>
                       <p class="catalog__plug-text">А в галерее вы всегда можете найти что-то интересное для себя</p>
@@ -689,16 +724,15 @@
         <div class="swiper events__swiper-wrapper">
           <button class="swiper-button-prev events__button-prev"></button>
           <button class="swiper-button-next events__button-next"></button>
+          <div class="swiper-pagination events__swiper-pagination"></div>
           <div class="swiper events__swiper">
             <ul class="swiper-wrapper events__cards reset-list">
               <li class="swiper-slide events__card">
                 <div class="events__card-wrapper">
                   <picture>
-                    <source media="(max-width: 350px)" srcset="img/pic1-mobile.jpg">
-                    <source media="(max-width: 650px)" srcset="img/pic1.jpg">
-                    <source media="(max-width: 769px)" srcset="img/pic1-768.jpg">
-                    <source media="(max-width: 962px)" srcset="img/pic1.jpg">
-                    <source media="(max-width: 1110px)" srcset="img/pic1-1024.jpg">
+                    <source media="(max-width: 320px)" srcset="img/events-1-320.jpg">
+                    <source media="(max-width: 768px)" srcset="img/events-1-768.jpg">
+                    <source media="(max-width: 1024px)" srcset="img/events-1-1024.jpg">
                     <img class="events__card-img" src="img/events-1-1920.jpg" alt="Книжная гравюра в живом восприятии">
                   </picture>
                   <div class="events__card-content">
@@ -720,11 +754,9 @@
               <li class="swiper-slide events__card">
                 <div class="events__card-wrapper">
                   <picture>
-                    <source media="(max-width: 350px)" srcset="img/pic2-mobile.jpg">
-                    <source media="(max-width: 650px)" srcset="img/pic2.jpg">
-                    <source media="(max-width: 769px)" srcset="img/pic2-768.jpg">
-                    <source media="(max-width: 962px)" srcset="img/pic2.jpg">
-                    <source media="(max-width: 1110px)" srcset="img/pic2-1024.jpg">
+                    <source media="(max-width: 320px)" srcset="img/events-2-320.jpg">
+                    <source media="(max-width: 768px)" srcset="img/events-2-768.jpg">
+                    <source media="(max-width: 1024px)" srcset="img/events-2-1024.jpg">
                     <img class="events__card-img" src="img/events-2-1920.jpg" alt="«Открытая дискуссия». Дмитрий Петров и Сергей Ильин.">
                   </picture>
                   <div class="events__card-content">
@@ -745,11 +777,9 @@
               <li class="swiper-slide events__card">
                 <div class="events__card-wrapper">
                   <picture>
-                    <source media="(max-width: 350px)" srcset="img/jpg/pic3-mobile.jpg">
-                    <source media="(max-width: 650px)" srcset="img/jpg/pic3.jpg">
-                    <source media="(max-width: 769px)" srcset="img/jpg/pic3-768.jpg">
-                    <source media="(max-width: 962px)" srcset="img/jpg/pic3.jpg">
-                    <source media="(max-width: 1110px)" srcset="img/jpg/pic3-1024.jpg">
+                    <source media="(max-width: 320px)" srcset="img/events-3-320.jpg">
+                    <source media="(max-width: 768px)" srcset="img/events-3-768.jpg">
+                    <source media="(max-width: 1024px)" srcset="img/events-3-1024.jpg">
                     <img class="events__card-img" src="img/events-3-1920.jpg" alt="Выставка «Формация 2020»">
                   </picture>
                   <div class="events__card-content">
@@ -771,11 +801,9 @@
               <li class="swiper-slide events__card">
                 <div class="events__card-wrapper">
                   <picture>
-                    <source media="(max-width: 350px)" srcset="img/jpg/pic4-mobile.jpg">
-                    <source media="(max-width: 650px)" srcset="img/jpg/pic4.jpg">
-                    <source media="(max-width: 769px)" srcset="img/jpg/pic4-768.jpg">
-                    <source media="(max-width: 962px)" srcset="img/jpg/pic4.jpg">
-                    <source media="(max-width: 1110px)" srcset="img/jpg/pic4-1024.jpg">
+                    <source media="(max-width: 320px)" srcset="img/events-4-320.jpg">
+                    <source media="(max-width: 768px)" srcset="img/events-4-768.jpg">
+                    <source media="(max-width: 1024px)" srcset="img/events-4-1024.jpg">
                     <img class="events__card-img" src="img/events-4-1920.jpg" alt="Джон Винзор. Фотографии из серии «Метафора»">
                   </picture>
                   <div class="events__card-content">
@@ -797,11 +825,9 @@
               <li class="swiper-slide events__card">
                 <div class="events__card-wrapper">
                   <picture>
-                    <source media="(max-width: 350px)" srcset="img/jpg/pic5-mobile.jpg">
-                    <source media="(max-width: 650px)" srcset="img/jpg/pic5.jpg">
-                    <source media="(max-width: 769px)" srcset="img/jpg/pic5-768.jpg">
-                    <source media="(max-width: 962px)" srcset="img/jpg/pic5.jpg">
-                    <source media="(max-width: 1110px)" srcset="img/jpg/pic5-1024.jpg">
+                    <source media="(max-width: 320px)" srcset="img/events-5-320.jpg">
+                    <source media="(max-width: 768px)" srcset="img/events-5-768.jpg">
+                    <source media="(max-width: 1024px)" srcset="img/events-5-1024.jpg">
                     <img class="events__card-img" src="img/events-5-1920.jpg" alt="XXIV Международная биеннале молодого искусства">
                   </picture>
                   <div class="events__card-content">
@@ -821,9 +847,9 @@
               </li>
             </ul>
           </div>
-          <div class="swiper-pagination events__swiper-pagination"></div>
         </div>
       </div>
+
     </section>
     <section class="projects" id="projects">
       <div class="container projects__container">
