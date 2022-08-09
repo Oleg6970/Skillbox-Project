@@ -474,3 +474,39 @@ function init(){
 
   contactMap.geoObjects.add(myPlacemark);
 }
+
+const burger = document.querySelector('.header__burger')
+const nav = document.querySelector('.header__wrap-menu')
+const navItems = nav.querySelectorAll('.nav__list-link')
+const body = document.body
+const searchOpen = document.querySelector('.header__burger-search-btn')
+const search = document.querySelector('.header__burger-search-wrap')
+const searchClose = document.querySelector('.header__burger-search-form-close')
+
+burger?.addEventListener('click', () => {
+  body.classList.toggle('stop-scroll')
+  burger?.classList.toggle('header__burger--active')
+  nav?.classList.toggle('header__wrap-menu--visible')
+})
+
+navItems.forEach(el => {
+  el.addEventListener('click', () => {
+    body.classList.remove('stop-scroll')
+    burger?.classList.remove('header__burger--active')
+    nav?.classList.remove('header__nav_burger--visible')
+  })
+})
+
+searchOpen.addEventListener('click', () => {
+  searchOpen.classList.add('btn--hidden');
+  search.classList.add('search--open');
+})
+
+searchClose.addEventListener('click', () => {
+  searchOpen.classList.remove('btn--hidden');
+  search.classList.remove('search--open');
+})
+
+
+
+
