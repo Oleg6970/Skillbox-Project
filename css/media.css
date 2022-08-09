@@ -257,37 +257,40 @@
     cursor: pointer;
   }
 
-  .header__burger-search-wrap, .header__burger-search-form-input {
-    position: absolute;
-    top: 30%;
-    right: 5.5%;
-    align-items: flex-end;
-    z-index: 10;
-    display: flex;
-    transition: visibility 0.3s ease-in-out, transform 0.3s ease-in-out;
-    visibility: hidden;
-    transform: translateX(50%) scaleX(0);
-  }
 
   .search--open {
     visibility: visible;
     transform: none;
-    display: block;
+    display: flex;
+    opacity: 1;
   }
 
   .btn--hidden {
-    opacity: 0;
     visibility: hidden;
+    /*display: none;*/
+    opacity: 0;
   }
 
   .header__burger-search-form {
-    display: flex;
+    position: absolute;
+    top: 30%;
+    right: 1%;
     margin-right: 24px;
+    align-items: flex-end;
+    z-index: 10;
+    /*transform: translateX(50%) scaleX(0);*/
+    /*transition:  transform 0.3s ease-in-out;*/
+    animation-name: search-open;
+    animation-duration: .3s;
+  }
+  .header__burger-search-form-btn {
+    cursor: pointer;
+    background: transparent;
   }
 
   .header__burger-search-form-input {
     border: 0;
-    outline: 0;
+    outline: none;
     border-bottom: 1px solid var(--color-white);
     background-color: transparent;
     color: var(--color-white);
@@ -300,6 +303,37 @@
     background-color: transparent;
     cursor: pointer;
     padding: 0;
+  }
+
+  .header__burger-search-form.search--open {
+    display: flex;
+    /*transform: translateX(50%) scaleX(0);*/
+  }
+  .header__burger-search-form.is-closed {
+    animation-name: search-close;
+    animation-duration: .3s;
+  }
+
+  @keyframes search-open {
+    from {
+      transform: translateY(-50%) scaleX(0);
+      /*opacity: 0;*/
+    }
+    to {
+      transform: translateY(-50%) scaleX(1);
+      /*opacity: 1;*/
+    }
+  }
+
+  @keyframes search-close {
+    from {
+      transform: translateY(-50%) scaleX(1);
+      /*opacity: 1;*/
+    }
+    to {
+      transform: translateY(-50%) scaleX(0);
+      /*opacity: 0;*/
+    }
   }
 
   .hero__title {
@@ -438,6 +472,32 @@
   /*.swiper-pagination-bullet-active {*/
   /*  background-color: var(--color-dove-gray);*/
   /*}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .contacts__container {
+    display: flex;
+    align-items: flex-start;
+    padding: 27px 0 21px 51px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  .contacts__office-location, .contacts__form {
+    margin-bottom: 30px;
+  }
+
 }
 
 @media (max-width: 768px) {

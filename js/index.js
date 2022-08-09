@@ -479,9 +479,11 @@ const burger = document.querySelector('.header__burger')
 const nav = document.querySelector('.header__wrap-menu')
 const navItems = nav.querySelectorAll('.nav__list-link')
 const body = document.body
+
 const searchOpen = document.querySelector('.header__burger-search-btn')
-const search = document.querySelector('.header__burger-search-wrap')
+const search = document.querySelector('.header__burger-search-form')
 const searchClose = document.querySelector('.header__burger-search-form-close')
+const searchString = document.querySelector('.header__burger-search-form-btn')
 
 burger?.addEventListener('click', () => {
   body.classList.toggle('stop-scroll')
@@ -508,5 +510,9 @@ searchClose.addEventListener('click', () => {
 })
 
 
+searchString.addEventListener('click', () => {
+  searchOpen.classList.remove('btn--hidden');
+  search.classList.remove('search--open');
+})
 
 

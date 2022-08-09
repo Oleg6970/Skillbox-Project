@@ -797,11 +797,13 @@ body {
   color: var(--color-mine-shaft);
 }
 
-.header__burger-search-btn,
-.header__burger-search-form-close,
-.header__burger-search-form-input,
-.header__burger-search-wrap,
 .header__burger {
+  display: none;
+}
+.header__burger-search-btn {
+  display: none;
+}
+.header__burger-search-form {
   display: none;
 }
 
