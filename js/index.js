@@ -235,7 +235,7 @@ const eventSwiper = new Swiper('.events__swiper', {
 
     1024: {
       slidesPerView: 3,
-      spaceBetween: 27,
+      spaceBetween: 23,
       slidesPerGroup: 3,
     },
 
@@ -257,13 +257,18 @@ const projectSwiper = new Swiper('.projects__swiper', {
   loop: true,
 
   breakpoints: {
+    320: {
+      slidesPerView: 1,
+      // spaceBetween: 32,
+      slidesPerGroup: 1,
+    },
     500: {
       slidesPerView: 2,
       spaceBetween: 32,
       slidesPerGroup: 2,
     },
 
-    1000: {
+    1024: {
       slidesPerView: 2,
       spaceBetween: 47,
       slidesPerGroup: 2,
